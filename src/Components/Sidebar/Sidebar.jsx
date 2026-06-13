@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../../assets/logo-BfNap0Pe.png";
 import { Link } from "react-router-dom";
+import { initFlowbite } from "flowbite";
 
 export default function Sidebar() {
+
+  useEffect(() => {
+    initFlowbite()
+  }, [])
+  
+
   return (
     <>
       <div className="bg-[#f4f2ee]">
